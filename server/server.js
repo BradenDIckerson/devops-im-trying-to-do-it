@@ -12,7 +12,7 @@ const rollbar = new Rollbar({
 })
 rollbar.log('hello world!')
 
-
+const ad = ['button']
 
 app.use(express.json())
 app.use(cors())
@@ -20,7 +20,7 @@ app.use(express.static('public'))
 
 
     rollbar.warning(`Someone pushed the${ad}`)
-
+    rollbar.error('nobody pushed the button.')
 
 
 
